@@ -37,7 +37,7 @@ I will first give the answers for each respective notebook.
 
 4. What are the top three features?
     - When analyzing the BalancedRandomForest I found that the top three features that had an effect on the target data were: 1. Loan Amount, 2. Interest Rate, 3. Installment.
-
-### Conclusion
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Conclusion
 
 Again, I began this project with the goal of finding the best model to predict credit risk. I looked at two different algorithm techniques for making predictions with imbalanced data. By using resampling methods I found that SMOTE oversampling was the best method with the highest balanced accuracy score. Both Oversampling methods had an equal score for recall and both had an equal score for geo. This illustrates that first off, oversampling as a whole is the better method when compared to undersampling. Then we can see that of the oversampling techniques, what really differentiates them is the balanced accuracy score and not even by alot. Looking at Ensemble Classifiers I found that EasyEnsembleClassifier basically won everything. EasyEnsembleClassifier had the best balanced accuracy score, the best recall score, and the best gemoetric score. Then going deeper and comparing the EasyEnsembleClassifier with a balanced accuracy of 0.925 to SMOTE oversampling with a balanced accuracy of 0.83885, the EasyEnsembleClassifier was clearly the best overall method for making predictions. The EasyEnsembleClassifier was very impressive. On a sidenote, with the Ensemble Classifiers, I also found that the three features that had the biggest impact on the target data were: 1. Loan Amount, 2. Interest Rate, and 3. Installment, which makes sense.  
